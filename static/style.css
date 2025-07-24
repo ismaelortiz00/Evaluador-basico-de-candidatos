@@ -1,0 +1,86 @@
+body {
+  background: linear-gradient(135deg, #201f1b 0%, #f0ede9 25%, #0e0e0d 50%, rgb(242, 236, 233) 75%, rgb(26, 25, 25) 100%);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+  font-family: Arial, sans-serif;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.contenedor {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  width: 320px;
+  margin: 50px auto;
+  padding: 40px;
+  border-style: groove;
+  border-width: 5px;
+  border-radius: 10px;
+}
+
+.titulo {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.boton {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  width: 150px;
+  margin: 20px auto 0 auto;
+  display: block;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.boton:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.resultado1 {
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+}
+
+.motivos {
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  margin-top: 15px;
+}
+
+.motivos1 {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  width: 300px;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 5px;
+  list-style: inside;
+  color: #fff;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

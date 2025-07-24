@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Resultado de evaluación</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+<body>
+  <div class="contenedor">
+    <h2 class="titulo">Resultado para {{ nombre }}</h2>
+
+    {% if califica %}
+      <p class="resultado1">✅ El candidato califica para la siguiente etapa.</p>
+    {% else %}
+      <p class="resultado1">❌ El candidato no califica.</p>
+      <p class="motivos">Motivos:</p>
+      <ul class="motivos1">
+        {% for motivo in motivos %}
+          <li>{{ motivo }}</li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+
+    <a class="boton" href="/">Volver</a>
+  </div>
+</body>
+</html>
